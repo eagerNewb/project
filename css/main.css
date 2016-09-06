@@ -4,24 +4,96 @@ html {
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+.navbar-fixed-top {
+    /*top: 37px;*/
+    position: inherit;
 }
 
-.topnav {
-    font-size: 14px; 
+.navbar-brand {
+    padding: 0;
+    margin: 14px 0;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+/*overriding the bootstrap val*/
+.container {
+    width: 1060px;
+}
+
+.nav > li > a {
+    padding: 10px 25px;
+    border-left: 1px solid #e3e3e3;
+}
+
+.last-li {
+    border-right: 1px solid #e3e3e3;
+}
+
+.navbar-nav > li > a {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.navbar-default {
+    background-color: #FFF;
+    border-bottom: 4px solid #509cd7;
+}
+
+.top-wrapper {
+    height: 38px;
+    padding: 6px 100px;
+    background-color: #f0eeee;
+}
+
+.top-wrapper-a-1 {
+    font-weight: bold;
+    color: #4594d1;
+    margin-left: 8px;
+}
+
+.top-wrapper-a-1:hover {
+    color: #4594d1;
+    text-decoration: none;
+}
+
+.top-wrapper-a-2 {
+    font-weight: bold;
+    color: #8c8e91;
+    margin-left: 30px;
+}
+
+.top-wrapper-a-2:hover {
+    color: #8c8e91;
+    text-decoration: none;
+}
+
+.top-wrapper-a-3 {
+    font-weight: bold;
+    color: #8c8e91;
+    margin: 0px 30px;
+}
+
+.top-wrapper-a-3:hover {
+    color: #8c8e91;
+    text-decoration: none;
+}
+
+.search-i {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(../img/search.png) no-repeat center center;
+}
+
+.top-heart {
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    background: url(../img/heart.png) no-repeat center center;
+}
+
+.inner-top-wrapper {
+    height: 22px;
+    float: right;
 }
 
 .intro-header {
@@ -129,9 +201,20 @@ h6 {
     margin-top: 0;
 }
 
+.footer-p-1 {
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.footer-p-2 {
+    text-align: center;
+    color: #FFF;
+}
+
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #808285;
 }
 
 p.copyright {
