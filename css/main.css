@@ -6,32 +6,45 @@ html {
 }
 
 h2 {
-    font-size: 40pt;
-    font-weight: 300;
-}
-
-.p-bold {
-    font-size: 16pt;
-    font-weight: 600;
-}
-
-.p-regular {
-    font-size: 16pt;
-    font-weight: 400;
-}
-
-.p-light {
-    font-size: 16pt;
+    font-size: 40px;
     font-weight: 300;
 }
 
 h4 {
-    font-size: 25pt;
+    font-size: 25px;
     font-weight: 300;
 }
 
+.p-bold {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.p-regular {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p-light {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sub-heading{ font-size:20px; }
+
+.sub-heading>span{
+    font-weight: 600;
+}
+.donation-date{
+   font-size:20px;
+   font-weight:300;
+}
+.donation-date>span{
+    color: #4594D1;
+}
+
 .btn-orange {
-    font-size: 13pt;
+    font-size: 13px;
     font-weight: 700;
     background: #e25f2b;
     border-radius: 3px;
@@ -51,7 +64,7 @@ h4 {
 }
 
 .btn-pink {
-    font-size: 13pt;
+    font-size: 13px;
     font-weight: 700;
     color: #f38fbc;
 }
@@ -387,6 +400,20 @@ h4 {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.foter-ul-li-1 {
+    font-weight: 700;
+    color: #b2b3b5;
+}
+
+.foter-ul-li-2 {
+    margin-top: 10px;
+    color: #b2b3b5;
+}
+
+.footer-ul > a {
+    text-decoration: none;
 }
 
 p.copyright {
