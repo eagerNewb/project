@@ -273,6 +273,38 @@ html {
     margin-top: 0;
 }
 
+.section-c-h {
+    text-align: center;
+    color: #686b6f;
+    margin: 80px 0;
+}
+
+.section-c-h-2 {
+    color: #686b6f;
+}
+
+.section-c-span1 {
+    color: #686b6f;
+}
+
+.section-c-span2 {
+    color: #f287b7;
+    font-weight: bold;
+}
+
+.section-c-span2:hover {
+    text-decoration: none;
+    color: #f287b7;
+}
+
+.section-c-span3 {
+    color: #686b6f;
+    width: 23px;
+    height: 9px;
+    display: inline-block;
+    background: url(../img/small-arrow.jpg) no-repeat center center;
+}
+
 .footer-p-1 {
     text-align: center;
     color: #FFF;
