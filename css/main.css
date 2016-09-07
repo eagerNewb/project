@@ -3,11 +3,41 @@ html {
     width: 100%;
     height: 100%;
 }
+h2 { 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 40pts; 
+    font-weight: 300; 
+    color: #4594D1;
+}
+
+.small-intro-text{
+    font-family: 'Open Sans', sans-serif; 
+    color: #000;
+    font-weight: 300;
+    font-size:25pts;
+}
+.bold-content{
+    font-family: 'Open Sans', sans-serif; 
+    color: #000;
+    font-weight: 600;
+    font-size:25pts;
+
+}
+.normal-content{
+    font-family: 'Open Sans', sans-serif; 
+    color: #000;
+    font-weight: 300;
+    font-size:25pts;
+
+}
+
 
 .navbar-fixed-top {
     /*top: 37px;*/
     position: inherit;
 }
+
+
 
 .navbar-brand {
     padding: 0;
