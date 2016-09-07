@@ -280,11 +280,12 @@ h4 {
     display: block;
     width: 123px;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .modified-baner-col {
-    height: 300px;
-    padding: 40px 8% 40px 8%;
+    height: 227px;
+    padding: 47px 8% 40px 8%;
     background: #62b1ee;
     background: -moz-linear-gradient(top,  #62b1ee 0%, #4594d2 100%);
     background: -webkit-linear-gradient(top,  #62b1ee 0%,#4594d2 100%);
@@ -292,11 +293,57 @@ h4 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', endColorstr='#4594d2',GradientType=0 );
 }
 
+.twitter-wrapper-1 {
+    height: 44px;
+    width: 100%;
+}
+
 .twitter-span-1 {
     width: 47px;
     height: 39px;
-    display: inline-block;
+    float: left;
     background: url(../img/twitter-big.png) no-repeat center center;
+}
+
+.twitter-span-2 {
+    color: #FFF;
+    float: left;
+    margin-top: 10px;
+    font-weight: 700;
+    margin-left: 10px; 
+}
+
+.twitter-bold-span {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.twitter-regular-span {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.twitter-wrapper-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;  
+}
+
+.twitter-anchor {
+    color: #FFF;
+}
+
+.twitter-anchor:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.twitter-anchor-icon {
+    width: 22px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 10px;
+    background: url(../img/small-whte-arrow.png) no-repeat center center;
 }
 
 .content-section-a {
@@ -343,26 +390,13 @@ h4 {
     color: #FFF;
 }
 
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
+.contact-form-paragraph-1 {
+    text-align: center;
+    color: #686b6f;
 }
 
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
+.contact-form-title {
+    margin: 80px 0 40px 0;
 }
 
 .section-c-h {
