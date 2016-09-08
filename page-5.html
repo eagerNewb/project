@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Title</title>
+    
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+<style type="text/css">
+    .blue_gradient_section{
+      background: #62b1ee;
+      background: -moz-linear-gradient(left,  #62b1ee 0%, #4594d1 100%);
+      background: -webkit-linear-gradient(left,  #62b1ee 0%,#4594d1 100%);
+      background: linear-gradient(to right,  #62b1ee 0%,#4594d1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', endColorstr='#4594d1',GradientType=1 );
+    }
+    .blue_gradient_section h2{ color: #fff; font-size: 40px; font-weight:300;  }
+    h2{
+        color: #4594D1; 
+    }
+    .blue_stuff{
+        color:#4594D1;
+    }
+    .pink_stuff{
+       color: #f287b7;
+    }
+    .upper_case{
+        text-transform: uppercase;
+    }
+    .inside_h2_span{color:#000;}
+    .sub_heading{ font-size:20px; }
+
+    .sub_heading>span{
+        font-weight: 600;
+    }
+    .donation_date{
+        margin-top:20px;
+        margin-bottom:30px;
+       font-size:20px;
+    }
+    .pink_donation_date{
+        margin-top:20px;
+        margin-bottom:30px;
+       font-size:20px;
+    }
+    .donation_date>span{
+        color: #4594D1;
+    }
+    .pink_donation_date>span{
+        color: #f287b7;
+    }
+    
+    .appeals_below_gradient_section, .appeals_above_gradient_section{
+        padding-top: 100px;
+        padding-bottom:100px;
+    }
+    .img_padding{
+        margin-top:30px;
+    }
+    .content_margin_bottom{
+        padding-bottom:40px;
+    }
+    .content_margin{
+        padding-top:50px;
+        padding-bottom:40px;
+    }
+    .appeals_last_heading{
+        margin-bottom:70px;
+    }
+    .appeals_dates>span{
+        color:#4594D1;
+    }
+    .appeals_text_subheading{
+        color: #4594D1;
+        font-size: 16px;
+    }
+    .no_date_padd{
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+    .progress_wrap{
+        background-color: #ffffff;
+        border-radius: 0;
+        width:50%;
+    }
+    .progress_bar{
+        background-color: #f37021;
+    }
+    .p_orange{ color: #f37021; font-weight:700; font-size:15px; }
+    .progress_bar_money{
+        display:inline-block;
+
+    }
+    .appeal_status{
+        padding-top:50px;
+    }
+    .progress_bar_money>p{
+        display:inline-block;
+    }
+    .diff_point{
+        padding-right:50%;
+    }
+    .start_point{
+        color:#f37021;
+        font-weight:700;
+        font-size:15px;
+    }
+    .end_point{
+        right:0;
+    }
+    .orange_banner_wrapper{
+        background: -webkit-linear-gradient(top, #ed6609 0%,#ee4c19 100%);
+        background: linear-gradient(to bottom, #ed6609 0%,#ee4c19 100%);
+        /*background-color: ;*/
+    }
+    .orange_btn{
+        width:260px;
+        margin-top: 67px;
+        margin-left: 0;
+    }
+    .orange_banner_wrapper>.upper_case{
+        color:#ed6609;
+    }
+    .section_c_span3_blue {
+    color: #686b6f;
+    width: 23px;
+    height: 9px;
+    margin-left: 10px;
+    display: inline-block;
+    background: url(img/arrow_blue.png) no-repeat center center;
+}
+.diff_progress_bar{
+    width:50%;
+}
+.text_right_padd{
+    padding-right:10%;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- <div class="container-fluid"> -->
+        <div class="top-wrapper">
+            <div class="inner-top-wrapper">
+                <span class="top-heart"></span>
+                <span>
+                    <a href="#" class="top-wrapper-a-1">MAKE A DONATION</a>
+                </span>
+                <span>
+                    <a href="#" class="top-wrapper-a-2">LOGIN</a>
+                </span>
+                <span>
+                    <a href="#" class="top-wrapper-a-3">CONTACT US</a>
+                </span>
+                <span>
+                    <span class="search-i"></span>
+                    <!-- <input> -->
+                </span>
+            </div>  
+        </div>
+    <!-- </div> -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">
+                    <img src="img/logo.png" class="img-responsive" alt="logo"> 
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Get Involved</a>
+                    </li>
+                    <li>
+                        <a href="#">Latest News</a>
+                    </li>
+                    <li>
+                        <a href="#">Appeals</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">Kit Mates</a>
+                    </li>
+                    <li>
+                        <a href="#">Your Stories</a>
+                    </li>
+                    <li class="last-li">
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="content-section-a appeals_below_gradient_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-md-6 text_right_padd">
+                <h2>Appeal to raise £25,000 for a ‘Sophie’ Incubator</h2>
+                <p class="sub_heading no_date_padd">St. George’s hospital, Tooting  |  <span>Greater London</span></p>
+                    <p class="p-bold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                   <p class="p-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                   cillum dolore eu fugiat nulla pariatur. Anim id est laborum.
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                   quis nostrud exercitation dolor in reprehenderit in voluptate velit esse
+                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui.</p>
+                   <div class="row">
+                       <div class="col-lg-12 appeal_status">
+                        <p class="p_orange">APPEAL CURRENT STATUS</p>
+                       <div class="progress progress_wrap">
+                          <div class="progress-bar progress_bar" role="progressbar" aria-valuenow="8550" aria-valuemin="0" aria-valuemax="12000" style="width: 60%;">
+                          </div>
+                        </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-lg-12">
+                            <div class="progress_bar_money diff_progress_bar">
+                                <p class="start_point diff_point">£8,550.00</p>
+                                <p class="end_point">£12,000</p>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-lg-12">
+
+                          <a href="#" class="orange_btn btn btn-default btn-lg modified-btn load-more-btn">
+                            <span class="network-name">DONATE TO THIS APPEAL</span>
+                         </a>
+                       </div>
+                    </div>
+                        
+                        
+                </div><!-- col-lg-6-text -->
+                 <div class="col-lg-5 col-md-6 col-sm-6" align="left">
+                   <img class="img-responsive img_padding" src="img/appeal_4.png" alt="">
+                   <img class="img-responsive img_padding" src="img/appeal_5.png" alt="">
+                   <img class="img-responsive img_padding" src="img/appeal_6.png" alt="">
+                </div><!-- col-lg-6-picture -->
+            </div>
+        <!-- /.container -->
+
+    </div>
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+    <!-- <a  name="services"></a> -->
+    
+    <!-- /.content-section-a -->
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 modified-col">
+                <div class="blue-banner-wrapper orange_banner_wrapper">
+                    <div class="banner-heart"></div>
+                    <h3 class="banner-heading">Need some inspiration?</h3>
+                    <p class="banner-paragraph">Read fundraiser stories</p>
+                    <button class="banner-btn upper_case">READ OUR STORIES</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 modified-col">
+                <div class="blue-banner-wrapper">
+                    <div class="banner-heart"></div>
+                    <h3 class="banner-heading">Want to get started?</h3>
+                    <p class="banner-paragraph">Explore our events & challenges</p>
+                    <button class="banner-btn upper_case">LIST OF EVENTS</button>
+                </div>
+            </div>
+
+            <div class="col-sm-4 modified-col">
+                <div class="pink-banner-wrapper">
+                    <div class="banner-heart"></div>
+                    <h3 class="banner-heading">Already doing a challenge?</h3>
+                    <p class="banner-paragraph">Select an appeal ot NNU</p>
+                    <button class="banner-btn banner-btn-2">LATEST APPEALS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+<div class="content-section-a content_margin_bottom">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <h2 class="appeals_last_heading">Other Appeals</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/appeal_1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
+                 <p class="p-regular">England</p>
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                          <div class="progress-bar progress_bar" role="progressbar" aria-valuenow="8550" aria-valuemin="0" aria-valuemax="12000" style="width: 60%;">
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="progress_bar_money">
+                                <p class="start_point">£8,550.00</p>
+                                /
+                                <p class="end_point">£12,000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">1 X INCUBATOR</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="img/appeal_2.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
+                 <p class="p-regular">England</p>
+                 <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                           <div class="progress-bar progress_bar" role="progressbar" aria-valuenow="980" aria-valuemin="0" aria-valuemax="1000" style="width: 90%;">
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="progress_bar_money">
+                                <p class="start_point">£8,550.00</p>
+                                /
+                                <p class="end_point">£12,000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">10 X BREAST PUMPS</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+               <div class="col-sm-4">
+                    <img src="img/appeal_3.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
+                 <p class="p-regular">England</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="progress">
+                          <div class="progress-bar progress_bar" role="progressbar" aria-valuenow="980" aria-valuemin="0" aria-valuemax="1000" style="width: 10%;">
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="progress_bar_money">
+                                <p class="start_point">£1,200</p>
+                                /
+                                <p class="end_point">£12,000</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">SIPAP MACHINE</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="#" class="btn btn-default btn-lg modified-btn load-more-btn">
+                        <span class="network-name">load more</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 modified-col">
+                <div class="blue-banner-wrapper">
+                    <div class="banner-heart"></div>
+                    <h3 class="banner-heading">Get in touch today</h3>
+                    <p class="banner-paragraph">to discuss how we could raise funds for your NNU</p>
+                    <button class="banner-btn upper_case">CONTACT ICKLE PICKLES</button>
+                </div>
+            </div>
+
+            <div class="col-sm-6 modified-col">
+                <div class="pink-banner-wrapper">
+                    <div class="banner-heart"></div>
+                    <h3 class="banner-heading">If you're asking "what can i do?"</h3>
+                    <p class="banner-paragraph">you can volunteer, fundraise or become an ambassador</p>
+                    <button class="banner-btn banner-btn-2">learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid modified-container-1">
+            <div class="row">
+                <div class="border col-xs-3">
+                    <img src="img/footer-logo.png" class="img-responsive footer-logo" alt="thumbnail">
+                </div>
+                <div class="border col-xs-3">
+                    <ul class="footer-ul">
+                        <li class="foter-ul-li-1">About the Ickle Pickles</li>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">What we do</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">Who we work with</li>
+                        </a>
+                        
+                        <a href="">
+                            <li class="foter-ul-li-2">Equipement we've bought</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">Events we run</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">How to get involved</li>
+                        </a>    
+                    </ul>
+                </div>
+                <div class="border col-xs-3">
+                    <ul class="footer-ul">
+                        <li class="foter-ul-li-1">About the Ickle Pickles</li>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">What we do</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">Who we work with</li>
+                        </a>
+                        
+                        <a href="">
+                            <li class="foter-ul-li-2">Equipement we've bought</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">Events we run</li>
+                        </a>
+
+                        <a href="">
+                            <li class="foter-ul-li-2">How to get involved</li>
+                        </a>    
+                    </ul>
+                </div>
+                <div class="border col-xs-3">
+                    <p class="social-title">Social</p>
+
+                    <ul class="footer-ul">
+                        <a href="">
+                            <li class="footer-social-i-1"></li>
+                        </a>
+                        <a href="">  
+                            <li class="footer-social-i-2"></li>
+                        </a>
+                        <a href="">
+                            <li class="footer-social-i-3"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid modified-container-2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p> -->
+
+                    <p class="footer-p-1">The ickle Pickle charity is funded entirely by voluntary contributions from organisations and individuals.</p>
+                    <p class="footer-p-2">© The Ickle Pickles 2016</p>
+                    <p class="footer-p-2">Registered charity no: 1129763 ( England & wales)</p>
+                    <p class="footer-p-2">The Ickle Pickle Partnership Ltd is a company limited by guarantee and is registered in England and Wales under company number 06831065</p>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
