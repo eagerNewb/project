@@ -88,6 +88,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
         color: #4594D1;
         font-size: 16px;
     }
+    .kit_mates{
+      padding-bottom:50px;
+    }
+    .no_margin_top{
+      padding-top:0px;
+    }
+    .search_stuff{
+      font-weight: 700; 
+      margin-bottom:60px;
+      background-color: transparent;
+      border:none;
+      -box-shadow: none;
+      -webkit-box-shadow:none;
+      width:auto;
+      /*border-bottom:2px solid ;*/
+      border-radius:0;
+    }
 </style>
 </head>
 
@@ -166,30 +183,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
 
     <!-- Header -->
     <a name="about"></a>
-    <div class="content-section-a appeals_above_gradient_section">
+    <div class="content-section-a content_margin_top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6" align="left">
-                   <img class="img-responsive img_padding" src="http://placehold.it/450x350" alt="">
-                </div><!-- col-lg-6-picture -->
-                
-                <div class="col-lg-6 col-md-6 col-md-6">
-                <h2>“Sophie” Incubator <span class="inside_h2_span">IP4635</span></h2>
-                <p class="sub_heading">St. George’s hospital, Tooting  |  <span>Greater London</span></p>
-                <p class="donation_date">
-                    Donnated on: <span>22/02/16</span>
-                </p>
-                    <p class="p-bold">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur.</p>
-                   <p class="p-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="col-lg-12 col-md-12 col-md-12" align="center">
+                <h2 class="kit_mates">KITMATES <!-- <span class="inside_h2_span">IP4635</span> --></h2>
+                   
+                   <p class="p-regular">We donate funds and equipment to many Neonatal Units at hospitals across England and Wales. We sometimes raise money for specific pieces of equipment but more often we will raise funds and then purchase equipment that the Unit most needs.</p>
+                   <p class="p-regular">Find the Neonatal Unit that treated your child or that is nearest to you and you can see what we’re raising money for.</p>
                 </div><!-- col-lg-6-text -->
             </div>
 
@@ -199,162 +200,114 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
     </div>
     <!-- /.intro-header -->
 
-    <!-- Page Content -->
+ 
+    <!-- /.intro-header -->
 
-	<!-- <a  name="services"></a> -->
-    <div class="content-section-a blue_gradient_section">
+<div class="content-section-a no_margin_top">
 
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-12" align="center">
-                    <!-- <hr class="section-heading-spacer"> -->
-                    <h2>Ickles Pickles treated by this piece of equipment</h2>
+                <div class="col-sm-6" align="left">
+                     <input type="text" class="form-control search_stuff" id="exampleInputName2" placeholder="SEARCH BY REF NUMBER">
+                </div>
+                <div class="col-sm-6" align="right">
+                    <p class="appeals_text_subheading search_stuff">Other pieces of equipement</p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
+                 <p class="appeals_text_subheading">“Sophie” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
+                 <p class="appeals_text_subheading">“Jack” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+               <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
+                 <p class="appeals_text_subheading">“Charly” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="appeals_below_gradient_section">
-
-        <!-- <div class="content-section-a"> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                <h2>James Martin</h2>
-                <p class="donation_date">
-                    Treated on: <span>22/02/16</span>  |  Gestation: <span>3 weeks</span>
-                </p>
-                    <p class="p-bold">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                   <p class="p-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div><!-- col-lg-6-text -->
-
-                  <div class="col-lg-6" align="right">
-                   <img class="img-responsive img_padding" src="http://placehold.it/450x350" alt="">
-                </div><!-- col-lg-6-picture -->
-            </div>
-
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a appeals_below_gradient_section">
-
-      <div class="container">
-            <div class="row">
-                <div class="col-lg-6" align="left">
-                   <img class="img-responsive img_padding" src="http://placehold.it/450x350" alt="">
-                </div><!-- col-lg-6-picture -->
-                
-                <div class="col-lg-6">
-                <h2 class="pink_stuff">Mary Jane Flanagan</h2>
-                <p class="pink_donation_date">
-                    Treated on: <span class="pink_stuff">22/02/16</span>  |  Gestation: <span class="pink_stuff">3 weeks</span>
-                </p>
-                    <p class="p-bold">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                   <p class="p-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div><!-- col-lg-6-text -->
-            </div>
-
-        </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-
- <div class="content-section-b appeals_below_gradient_section">
-
-      <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                <h2 class="pink_stuff">Nadira El Azal</h2>
-                <p class="pink_donation_date">
-                    Treated on: <span class="pink_stuff">22/02/16</span>  |  Gestation: <span class="pink_stuff">3 weeks</span>
-                </p>
-                    <p class="p-bold">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                   <p class="p-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div><!-- col-lg-6-text -->
-                 <div class="col-lg-6" align="left">
-                   <img class="img-responsive img_padding" src="http://placehold.it/450x350" alt="">
-                </div><!-- col-lg-6-picture -->
-            </div>
-
-        </div>
-
-        </div>
-        <!-- /.container -->
-<div class="content-section-a appeals_above_gradient_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6" align="left">
-                   <img class="img-responsive img_padding" src="http://placehold.it/450x350" alt="">
-                </div><!-- col-lg-6-picture -->
-                
-                <div class="col-lg-6">
-                <h2>Adebowale N’sutu</h2>
-                 <p class="donation_date">
-                    Treated on: <span class="">22/02/16</span>  |  Gestation: <span class="">3 weeks</span>
-                </p>
-                    <p class="p-bold">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation </p>
-                   <p class="p-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur.</p>
-                </div><!-- col-lg-6-text -->
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-
-<div class="content-section-c content_margin">
-
-        <div class="container">
 
             <div class="row">
-                <div class="col-sm-12" align="center">
-                    <h2 class="appeals_last_heading">Other pieces of equipement</h2>
+                <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
+                 <p class="appeals_text_subheading">“Sophie” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
+                 <p class="appeals_text_subheading">“Jack” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+               <div class="col-sm-4">
+                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
+                 <p class="appeals_text_subheading">“Charly” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section-c-span3 blue_stuff"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -422,21 +375,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
 
 <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 modified-col">
+            <div class="col-sm-12 modified-col">
                 <div class="blue-banner-wrapper">
                     <div class="banner-heart"></div>
-                    <h3 class="banner-heading">Want to find your child’s kit mates?</h3>
-                    <p class="banner-paragraph">Create an account today</p>
-                    <button class="banner-btn upper_case">CREATE ACCOUNT</button>
-                </div>
-            </div>
-
-            <div class="col-sm-6 modified-col">
-                <div class="pink-banner-wrapper">
-                    <div class="banner-heart"></div>
-                    <h3 class="banner-heading">If you're asking "what can i do?"</h3>
-                    <p class="banner-paragraph">you can volunteer, fundraise or become an ambassador</p>
-                    <button class="banner-btn banner-btn-2">learn more</button>
+                    <h3 class="banner-heading">Take heart from Ickle Pickles stories</h3>
+                    <button class="banner-btn upper_case">read them here</button>
                 </div>
             </div>
         </div>
