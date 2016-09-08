@@ -84,6 +84,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
     .appeals_dates>span{
         color:#4594D1;
     }
+    .kitmate_names{
+        margin-bottom:3px;
+    }
     .appeals_text_subheading{
         color: #4594D1;
         font-size: 16px;
@@ -95,16 +98,85 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
       padding-top:0px;
     }
     .search_stuff{
+       padding-left:0;
       font-weight: 700; 
       margin-bottom:60px;
       background-color: transparent;
       border:none;
       -box-shadow: none;
       -webkit-box-shadow:none;
-      width:auto;
+      width:200px !important;
       /*border-bottom:2px solid ;*/
       border-radius:0;
     }
+    .magnify_glass_btn{
+        background-color: transparent;
+      border:none;
+      -box-shadow: none;
+      -webkit-box-shadow:none;
+      /*width:10px;*/
+      /*border-bottom:2px solid ;*/
+      border-radius:0;
+      padding-left:0;
+     }
+     .search_stuff::-webkit-input-placeholder {
+   color: #4594D1;
+}
+
+.search_stuff:-moz-placeholder { /* Firefox 18- */
+   color: #4594D1;  
+}
+
+.search_stuff::-moz-placeholder {  /* Firefox 19+ */
+   color: #4594D1;  
+}
+
+.search_stuff:-ms-input-placeholder {  
+   color: #4594D1;  
+}
+     .search_input_group{
+        width:28%;
+        border-bottom:2px solid #4594D1;
+        margin-bottom:80px;
+     }
+    .section_c_span3_blue {
+        color: #686b6f;
+        width: 23px;
+        height: 9px;
+        margin-left: 10px;
+        display: inline-block;
+        background: url(img/arrow_blue.png) no-repeat center center;
+    }
+    .margin_kitmates{
+        margin-bottom:70px;
+    }
+    .kitmate_loc{ 
+        padding-bottom:10px; 
+    }
+    .blue_banner_wrapper_wide{
+        height:250px;
+    }
+    .kitmates_intro_text{
+        padding-left:11%;
+        padding-right:11%;
+    }
+    .kitmates_intro_text_2{
+        padding-left:12%;
+        padding-right:12%;
+
+    }
+    .filter_nnu{
+        font-weight: 700;
+        color: #4594D1;
+        padding-right:30px;
+    }
+     .drpdwn_inline{
+        display: inline-block;
+     }
+     .drpdwn_btn{
+        width:150px;
+     }
+
 </style>
 </head>
 
@@ -189,8 +261,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
                 <div class="col-lg-12 col-md-12 col-md-12" align="center">
                 <h2 class="kit_mates">KITMATES <!-- <span class="inside_h2_span">IP4635</span> --></h2>
                    
-                   <p class="p-regular">We donate funds and equipment to many Neonatal Units at hospitals across England and Wales. We sometimes raise money for specific pieces of equipment but more often we will raise funds and then purchase equipment that the Unit most needs.</p>
-                   <p class="p-regular">Find the Neonatal Unit that treated your child or that is nearest to you and you can see what we’re raising money for.</p>
+                   <p class="p-regular kitmates_intro_text">We donate funds and equipment to many Neonatal Units at hospitals across England and Wales. We sometimes raise money for specific pieces of equipment but more often we will raise funds and then purchase equipment that the Unit most needs.</p>
+                   <p class="p-regular kitmates_intro_text_2">Find the Neonatal Unit that treated your child or that is nearest to you and you can see what we’re raising money for.</p>
                 </div><!-- col-lg-6-text -->
             </div>
 
@@ -208,57 +280,122 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
         <div class="container">
 
             <div class="row">
-                <div class="col-sm-6" align="left">
-                     <input type="text" class="form-control search_stuff" id="exampleInputName2" placeholder="SEARCH BY REF NUMBER">
+                <div class="col-lg-6" align="left">
+                    <div class="input-group search_input_group">
+                      <input type="text" class="form-control search_stuff" placeholder="SEARCH BY REF NUMBER">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default magnify_glass_btn" type="button"><img src="img/magnify_glass.png"></button>
+                      </span>
+                    </div><!-- /input-group -->
                 </div>
-                <div class="col-sm-6" align="right">
-                    <p class="appeals_text_subheading search_stuff">Other pieces of equipement</p>
+                <div class="col-lg-6 drpdwn_inline" align="right">
+                     <p class="filter_nnu drpdwn_inline"><span>FILTER BY HOSPITAL NNU</span></p>
+                    <div class="btn-group drpdwn_inline">
+                      <button type="button" class="drpdwn_btn btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    </p>
                 </div>
 
             </div>
 
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
-                 <p class="appeals_text_subheading">“Sophie” Incubator</p>
+                <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_2.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc ">Royal Lancaster Infirmary</h4>
+                 <p class="appeals_text_subheading kitmate_names kitmate_names">“Sophie” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
 
-                <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
-                 <p class="appeals_text_subheading">“Jack” Incubator</p>
+                <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_1.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Royal bolton hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Jack” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
 
-               <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
-                 <p class="appeals_text_subheading">“Charly” Incubator</p>
+               <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_3.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Turnbridge wells hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Charly” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_4.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Royal Lancaster Infirmary</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Sophie” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_5.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Royal bolton hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Jack” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
+                        </a>
+                    </div>
+                </div>
+
+               <div class="col-sm-4 margin_kitmates">
+                    <img src="img/kitmate_6.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Turnbridge wells hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Charly” Incubator</p>
+                 <p class="appeals_dates">
+                    Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
+                 </p>
+                    <div>
+                        <a href="" class="article-anchor">
+                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
@@ -266,93 +403,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
 
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
-                 <p class="appeals_text_subheading">“Sophie” Incubator</p>
+                    <img src="img/kitmate_7.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Royal Lancaster Infirmary</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Sophie” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
 
                 <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
-                 <p class="appeals_text_subheading">“Jack” Incubator</p>
+                    <img src="img/kitmate_8.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Royal bolton hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Jack” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
 
                <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
-                 <p class="appeals_text_subheading">“Charly” Incubator</p>
+                    <img src="img/kitmate_9.png" class="img-responsive" alt="thumbnail">
+                    <h4 class="section-c-h-2 kitmate_loc">Turnbridge wells hospital</h4>
+                 <p class="appeals_text_subheading kitmate_names">“Charly” Incubator</p>
                  <p class="appeals_dates">
                     Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
                  </p>
                     <div>
                         <a href="" class="article-anchor">
                             <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal Lancaster Infirmary</h4>
-                 <p class="appeals_text_subheading">“Sophie” Incubator</p>
-                 <p class="appeals_dates">
-                    Bought: <span>22/02/16</span>  |  IP Ref No: <span>IP4635</span>
-                 </p>
-                    <div>
-                        <a href="" class="article-anchor">
-                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Royal bolton hospital</h4>
-                 <p class="appeals_text_subheading">“Jack” Incubator</p>
-                 <p class="appeals_dates">
-                    Bought: <span>12/02/16</span>  |  IP Ref No: <span>IP1123</span>
-                 </p>
-                    <div>
-                        <a href="" class="article-anchor">
-                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
-                        </a>
-                    </div>
-                </div>
-
-               <div class="col-sm-4">
-                    <img src="img/img-1.png" class="img-responsive" alt="thumbnail">
-                    <h4 class="section-c-h-2">Turnbridge wells hospital</h4>
-                 <p class="appeals_text_subheading">“Charly” Incubator</p>
-                 <p class="appeals_dates">
-                    Bought: <span>12/01/16</span>  |  IP Ref No: <span>IP463</span>
-                 </p>
-                    <div>
-                        <a href="" class="article-anchor">
-                            <span class="section-c-span2 blue_stuff">VIEW THIS KIT</span>
-                            <span class="section-c-span3 blue_stuff"></span>
+                            <span class="section_c_span3_blue blue_stuff"></span>
                         </a>
                     </div>
                 </div>
@@ -376,7 +466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', end
 <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 modified-col">
-                <div class="blue-banner-wrapper">
+                <div class="blue-banner-wrapper blue_banner_wrapper_wide">
                     <div class="banner-heart"></div>
                     <h3 class="banner-heading">Take heart from Ickle Pickles stories</h3>
                     <button class="banner-btn upper_case">read them here</button>
