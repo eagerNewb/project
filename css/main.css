@@ -149,6 +149,10 @@ h4 {
     width: 1060px;
 }
 
+.fluid-with-margin {
+    margin: 0 120px;
+}
+
 .nav > li > a {
     padding: 10px 25px;
     border-left: 1px solid #e3e3e3;
@@ -168,10 +172,13 @@ h4 {
     border-bottom: 4px solid #509cd7;
 }
 
+.with-gray-bg {
+    background-color: #f0eeee;
+}
+
 .top-wrapper {
     height: 38px;
-    padding: 6px 100px;
-    background-color: #f0eeee;
+    padding: 6px;
 }
 
 .top-wrapper-a-1 {
@@ -932,3 +939,117 @@ p.copyright {
         margin-bottom: 0;
     }
 }
+
+/*media querys*/
+
+/*macbook air*/
+@media (min-width: 1440px){
+
+}
+
+/*standart laptops like lenovo*/
+@media (max-width: 1346px){
+    
+}
+/*ipad, ipad-mini, blackberry-playbook landscape*/
+@media (max-width: 1024px){
+    
+}
+
+/*google-nexus-7 landscape*/
+@media (max-width: 960px) {
+    
+}
+
+/*google-nexus-10 portrait*/
+@media (max-width: 800px) {
+    
+}
+
+/*ipad, ipad-mini portrait*/
+@media (max-width: 768px) {
+    
+}
+
+/*iphone 6-plus landscape*/
+@media (max-width: 736px){
+    
+}
+
+/*google-nexus-6 landscape*/
+@media (max-width: 690px){
+    
+}
+
+/*iphone 6 landscape*/
+@media (max-width: 667px){
+    
+}
+
+/*samsung-s4, samsung-galaxy-note-3, samsung-galaxy-note-II, samsung-galaxy-s-III, samsung-galaxy-s4,
+  blackberry-z30, lg-optimus-l70, nokia-n9, landscape*/
+@media (max-width: 640px){
+    
+}
+
+/*blackbarry-playbook, google-nexus-7 portrait*/
+@media (max-width : 600px){
+    .fluid-with-margin {
+        margin: 0;
+    }
+    .inner-top-wrapper {
+        font-size: 11px;
+    }
+}
+
+/*google-nexus-4, google-nexus-5 landscape*/
+@media (max-width : 598px){
+    
+}
+
+/*iphone 5,5c,5s landscape*/
+@media (max-width : 568px){
+    
+}
+
+/*nokia lumia 520 landscape*/
+@media (max-width: 533px){
+    
+}
+
+/*iphone 4,4s landscape*/
+@media (max-width: 480px){
+    
+}
+
+/*iphone-6-plus portrait*/
+@media (max-width: 414px){
+    
+}
+
+/*google-nexus-6 portrait*/
+@media (max-width: 412px){
+    
+}
+
+/*google-nexus-4, lg-optimus-l70 portrait*/
+@media (max-width: 384px){
+    
+}
+
+/*iphone-6 portrait*/
+@media (max-width: 375px){
+    
+}
+
+/*samsung-s4, blackbarry-z30, google-nexus-5, nokia-n9,
+  samsung-galaxy-note-3, samsung-galaxy-note-II, samsung-galaxy-s-III, samsung-galaxy-s4 portrait*/
+@media (max-width: 360px){
+    
+}
+
+/*iphone-4,4s, iphone-5,5c,5s, nokie-lumia-520 portrait*/
+@media (max-width: 320px){
+    
+}
+/* end of media querys*/
