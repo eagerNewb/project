@@ -732,7 +732,7 @@ h4 {
 }
 
 .map-holder {
-    width: 70%;
+    width: 80%;
     margin: 49px auto 0px
 }
 
@@ -750,6 +750,18 @@ h4 {
 
 .map-sponsors-h {
     color: #f287b7;
+}
+
+.small-carousel-text {
+    color: #696b6f;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.small-carousel-a:hover {
+    text-decoration: none;
 }
 
 .sponsors-section-p-bold {
