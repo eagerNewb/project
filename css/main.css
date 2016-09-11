@@ -23,6 +23,7 @@ h4 {
 .p-regular {
     font-size: 16px;
     font-weight: 400;
+    color: #686b6f;
 }
 
 .p-light {
@@ -97,9 +98,59 @@ h4 {
     margin: 14px 0;
 }
 
+.topnav {
+    position: relative;
+}
+
+.nav-dropdown-content {
+    display: none;
+    width: 100%;
+    position: absolute;
+    padding: 20px 40px 20px 305px;
+    background: #4694d1;
+    background: -moz-linear-gradient(left, #4694d1 0%, #62b1ee 100%);
+    background: -webkit-linear-gradient(left, #4694d1 0%,#62b1ee 100%);
+    background: linear-gradient(to right, #4694d1 0%,#62b1ee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4694d1', endColorstr='#62b1ee',GradientType=1 );
+}
+
+.toggle-nav-dropdown-content {
+    display: block;
+}
+
+.nav-dropdown-content-ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-dropdown-content-ul li a  {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-dropdown-content-ul li  {
+    margin-bottom: 30px;
+}
+
+.nav-dropdown-content-ul li:hover  {
+    list-style: disc;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.text-holder-nav-dropdown {
+    float: left;
+    margin-right: 50px;
+}
+
 /*overriding the bootstrap val*/
 .container {
     width: 1060px;
+}
+
+.fluid-with-margin {
+    margin: 0 120px;
 }
 
 .nav > li > a {
@@ -121,10 +172,13 @@ h4 {
     border-bottom: 4px solid #509cd7;
 }
 
+.with-gray-bg {
+    background-color: #f0eeee;
+}
+
 .top-wrapper {
     height: 38px;
-    padding: 6px 100px;
-    background-color: #f0eeee;
+    padding: 6px;
 }
 
 .top-wrapper-a-1 {
@@ -433,6 +487,88 @@ h4 {
     background: url(../img/small-arrow.png) no-repeat center center;
 }
 
+.form-input {
+    width: 220px;
+    padding: 7px;
+    border: 1px solid rgb(225, 229, 229);
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-bottom: 7px;
+}
+
+.form-input:nth-child(2) {
+    margin-right: 0;
+}
+
+#msg,.form-input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+#msg,.form-input:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+#msg,.form-input::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+#msg,.form-input:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+#msg {
+    width: 464px;
+    padding: 7px;
+    border: 1px solid rgb(225, 229, 229);
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.home-page-form {
+    width: 464px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.home-page-form-p {
+    color: #8f8f8e;
+    margin-top: 20px;
+}
+
+.home-page-form-btn {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.form-msg {
+    font-weight: 300;
+    color: #8f8f8e;
+    text-align: center;
+    margin-bottom: 40px;    
+}
+
+.from-span {
+    color: #8f8f8e;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.checkbox-holder {
+    width: 705px;
+    margin: 0px auto;
+    padding-left: 120px;
+}
+
+.checkbox-holder-input {
+    margin-left: 44px !important;
+    margin-bottom: 15px !important;
+}
+
+.checkbox-holder-input-2 {
+    margin-left: 13px !important;
+}
+
 .article-anchor {
     margin-top: 20px;
     display: block;
@@ -440,6 +576,189 @@ h4 {
 
 .article-anchor:hover {
     text-decoration: none;
+}
+
+.about-page-p1 {
+    text-align: center;
+    font-weight: 600;
+    color: #686b6f;
+    max-width: 738px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+.about-page-p2 {
+    max-width: 738px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #686b6f;
+}
+
+.about-page-p3 {
+    margin-bottom: 80px;
+}
+
+.abut-page-section-a {
+    background-color: #f4f5f5;
+}
+
+.abut-page-section-b {
+    background-color: #FFF;
+}
+
+.about-page-article-h {
+    color: #4594D1;
+}
+
+.about-page-article-p-bold {
+    font-weight: 600;
+    color: #686b6f;
+}
+
+.about-page-pic-a {
+    font-weight: 600;
+    font-style: italic;
+    color: #4594d1;
+    margin-top: 20px;
+    display: block;
+}
+
+.about-page-pic-a:hover {
+    color: #4594d1;
+    text-decoration: none;
+}
+
+.about-page-equipment-h {
+    color: #f37021;
+}
+
+.about-page-section-c {
+    background-color: #f0efef;
+}
+
+.about-page-article-c-p {
+    text-align: center;
+    max-width: 870px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-page-article-c-p-2 {
+    text-align: center;
+    max-width: 870px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.about-page-equipment-h-2 {
+    color: #686b6f;
+    margin-top: 40px;
+}
+
+.get-involved-p1 {
+    max-width: 752px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #686b6f;
+}
+
+.get-involved-p2 {
+    max-width: 772px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #686b6f;
+}
+
+.get-involved-h {
+    color: #f37021;
+    margin-top: 0;
+}
+
+.get-involved-btn-1 {
+    margin: 0;
+    margin-top: 40px;
+}
+
+.get-involved-btn-2 {
+    margin: 0;
+    margin-top: 40px;
+    background: #4694d1;
+    background: -moz-linear-gradient(left,  #4694d1 0%, #62b1ee 100%);
+    background: -webkit-linear-gradient(left,  #4694d1 0%,#62b1ee 100%);
+    background: linear-gradient(to right,  #4694d1 0%,#62b1ee 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4694d1', endColorstr='#62b1ee',GradientType=1 );
+}
+
+.get-involved-holder {
+    text-align: center;
+    margin: 0 auto;
+    color: #f37021;
+    font-weight: 600;
+}
+
+.get-involved-a {
+    color: #f37021;
+}
+
+.content-section-gray-b {
+    background-color: #f9f9f9;
+}
+
+.equipment-cost-holder {
+    width: 89px;
+    margin: 0 auto;
+    color: #f37021;
+    font-weight: 600;
+}
+
+.map-section-p-bold {
+    text-align: center;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #686b6f;
+}
+
+.map-section-p {
+    text-align: center;
+    max-width: 665px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #686b6f;
+}
+
+.map-holder {
+    width: 70%;
+    margin: 49px auto 0px
+}
+
+.map-btn {
+    width: 335px;
+}
+
+.map-h-inner {
+    color: #4594d1;
+}
+
+.map-regular-p {
+    font-weight: 400;
+}
+
+.map-sponsors-h {
+    color: #f287b7;
+}
+
+.sponsors-section-p-bold {
+    text-align: center;
+    max-width: 668px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #686b6f;
 }
 
 .footer-p-1 {
@@ -620,3 +939,124 @@ p.copyright {
         margin-bottom: 0;
     }
 }
+
+/*media querys*/
+
+/*macbook air*/
+@media (min-width: 1440px){
+
+}
+
+/*standart laptops like lenovo*/
+@media (max-width: 1346px){
+    
+}
+/*ipad, ipad-mini, blackberry-playbook landscape*/
+@media (max-width: 1024px){
+    
+}
+
+/*google-nexus-7 landscape*/
+@media (max-width: 960px) {
+    
+}
+
+/*google-nexus-10 portrait*/
+@media (max-width: 800px) {
+    
+}
+
+/*ipad, ipad-mini portrait*/
+@media (max-width: 768px) {
+    
+}
+
+/*iphone 6-plus landscape*/
+@media (max-width: 736px){
+    
+}
+
+/*google-nexus-6 landscape*/
+@media (max-width: 690px){
+    
+}
+
+/*iphone 6 landscape*/
+@media (max-width: 667px){
+    
+}
+
+/*samsung-s4, samsung-galaxy-note-3, samsung-galaxy-note-II, samsung-galaxy-s-III, samsung-galaxy-s4,
+  blackberry-z30, lg-optimus-l70, nokia-n9, landscape*/
+@media (max-width: 640px){
+    
+}
+
+/*blackbarry-playbook, google-nexus-7 portrait*/
+@media (max-width : 600px){
+    .fluid-with-margin {
+        margin: 0;
+    }
+    .inner-top-wrapper {
+        font-size: 11px;
+    }
+    .footer-logo {
+        margin: 0 0 40px 0;
+    }
+
+    .social-title {
+        margin: 40px 0 0 0; 
+    }
+}
+
+/*google-nexus-4, google-nexus-5 landscape*/
+@media (max-width : 598px){
+    
+}
+
+/*iphone 5,5c,5s landscape*/
+@media (max-width : 568px){
+    
+}
+
+/*nokia lumia 520 landscape*/
+@media (max-width: 533px){
+    
+}
+
+/*iphone 4,4s landscape*/
+@media (max-width: 480px){
+    
+}
+
+/*iphone-6-plus portrait*/
+@media (max-width: 414px){
+    
+}
+
+/*google-nexus-6 portrait*/
+@media (max-width: 412px){
+    
+}
+
+/*google-nexus-4, lg-optimus-l70 portrait*/
+@media (max-width: 384px){
+    
+}
+
+/*iphone-6 portrait*/
+@media (max-width: 375px){
+    
+}
+
+/*samsung-s4, blackbarry-z30, google-nexus-5, nokia-n9,
+  samsung-galaxy-note-3, samsung-galaxy-note-II, samsung-galaxy-s-III, samsung-galaxy-s4 portrait*/
+@media (max-width: 360px){
+    
+}
+
+/*iphone-4,4s, iphone-5,5c,5s, nokie-lumia-520 portrait*/
+@media (max-width: 320px){
+    
+}
+/* end of media querys*/
