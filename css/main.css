@@ -1000,6 +1000,13 @@ p.copyright {
     .inner-top-wrapper {
         font-size: 11px;
     }
+    .footer-logo {
+        margin: 0 0 40px 0;
+    }
+
+    .social-title {
+        margin: 40px 0 0 0; 
+    }
 }
 
 /*google-nexus-4, google-nexus-5 landscape*/
