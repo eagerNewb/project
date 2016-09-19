@@ -70,6 +70,11 @@ h4 {
     color: #f38fbc;
 }
 
+.active-nav-a {
+    background-color: #509cd7;
+    color: #FFF !important;
+}
+
 .modified-btn {
     border-radius: 3px;
     border: none;
@@ -564,6 +569,18 @@ h4 {
     border-radius: 3px;
     margin-right: 20px;
     margin-bottom: 7px;
+}
+
+.form-input:hover {
+    color: #686b6f;
+}
+
+.form-input:focus {
+    outline-width: 0;
+}
+
+.form-input:active {
+    font-weight: 600;
 }
 
 .form-input:nth-child(2) {

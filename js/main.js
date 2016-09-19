@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
 	// display the dropdown of the nav
-    $(".nav > li > a").mouseover(function() {
+    $(".nav > li > a").click(function() {
+    	$(".nav > li > a").removeClass("active-nav-a");
+
+    	$(this).addClass("active-nav-a");
+
 	    $(".nav-dropdown-content").toggleClass("toggle-nav-dropdown-content");
 	});
 
