@@ -259,6 +259,19 @@ h4 {
     text-decoration: none;
 }
 
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.section-a-title {
+    text-align: center;
+    color: #4594d1;
+    margin: 80px 0 160px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
 .search-i {
     width: 15px;
     height: 15px;
@@ -289,7 +302,7 @@ h4 {
     z-index: 1;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     background-color: rgba(255,255,255, 0.7);
 }
 
@@ -301,9 +314,13 @@ h4 {
 
 .intro-message > p {
     color: #686b6f;
-    margin: 20px 0 25px 0;
+    margin: 20px 0 32px 0;
     font-weight: 600;
     font-size: 16px;
+}
+
+.intro-message-ul {
+    margin-bottom: 55px;
 }
 
 .intro-divider {
@@ -316,12 +333,43 @@ h4 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.section-a-title {
+.section-c-h {
     text-align: center;
-    color: #4594d1;
-    margin: 80px 0 160px;
+    color: #686b6f;
+    margin: 80px 0;
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 300
+}
+
+.home-page-first-section {
+    padding-top: 0;
+    padding-bottom: 167px;
+}
+
+.home-page-first-section-title {
+    margin: 118px 0 119px 0;
+}
+
+.home-page-first-section-modified-row {
+    margin-right: 76px;
+    width: 28.333333%;
+}
+
+.home-page-first-section-modified-row:nth-child(3n) {
+    margin-right: 0;
+}
+
+.home-page-middle-h {
+    margin-top: 0;
+    margin-bottom: 37px;
+}
+
+.home-page-middle-btn {
+    margin: 36px 0 82px 0;
+}
+
+.home-page-third-section-h {
+    margin: 77px 0 92px 0;
 }
 
 .section-a-overlay {
@@ -333,7 +381,7 @@ h4 {
 .section-a-h {
     color:  #686b6f;
     text-align: center;
-    margin: 33px 0 20px;
+    margin: 34px 0 20px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -341,8 +389,13 @@ h4 {
 .section-a-p {
     color:  #f287b7;
     text-align: center;
-    margin: 15px 0 80px;
+    margin: 0 0 80px 0;
     font-size: 18px;
+    line-height: 20px;
+}
+
+.section-a-p-last-childs {
+    margin: 0;
 }
 
 .section-a-overlay:hover {
@@ -353,10 +406,6 @@ h4 {
     .intro-message {
         padding-bottom: 15%;
     }
-
-    /*.intro-message > h1 {
-        font-size: 3em;
-    }*/
 
     ul.intro-social-buttons > li {
         display: block;
@@ -394,8 +443,8 @@ h4 {
 }
 
 .modified-baner-col {
-    height: 227px;
-    padding: 47px 8% 40px 8%;
+    height: 300px;
+    padding: 0 8%;
     background: #62b1ee;
     background: -moz-linear-gradient(top,  #62b1ee 0%, #4594d2 100%);
     background: -webkit-linear-gradient(top,  #62b1ee 0%,#4594d2 100%);
@@ -403,13 +452,20 @@ h4 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b1ee', endColorstr='#4594d2',GradientType=0 );
 }
 
+.contact-form-title {
+    margin: 80px 0 40px 0;
+}
+
 .smaller-title {
     font-size: 30px;
+    margin-bottom: 39px;
 }
 
 .twitter-wrapper-1 {
     height: 44px;
     width: 100%;
+    margin-top: 54px;
+    margin-bottom: 34px;
 }
 
 .twitter-span-1 {
@@ -429,23 +485,24 @@ h4 {
 
 .twitter-bold-span {
     color: #FFF;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 25px;
     line-height: 35px;
 }
 
 .twitter-regular-span {
     color: #FFF;
-    font-size: 16px;
+    font-size: 25px;
+    line-height: 35px;
 }
 
 .twitter-wrapper-2 {
-    margin-top: 20px;
-    margin-bottom: 20px;  
+    margin-bottom: 34px;  
 }
 
 .twitter-anchor {
     color: #FFF;
+    font-weight: bold;
 }
 
 .twitter-anchor:hover {
@@ -461,11 +518,6 @@ h4 {
     background: url(../img/small-whte-arrow.png) no-repeat center center;
 }
 
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
 .content-section-b {
     position: relative;
 }
@@ -475,7 +527,7 @@ h4 {
 }
 
 .home-page-middle-banner {
-    min-height: 527px;
+    min-height: 539px;
 }
 
 .section-heading-spacer {
@@ -492,10 +544,6 @@ h4 {
     width: 400px;
 }
 
-.content-section-b-inner-wrapper > .modified-btn {
-    margin-top: 20px;
-}
-
 .content-section-b-h {
     color: #FFF;
     font-size: 40px;
@@ -507,34 +555,26 @@ h4 {
     font-weight: 600;
     line-height: 19px;
     font-size: 16px;
+    margin-bottom: 9px;
 }
 
 .content-section-b-p2 {
     color: #FFF;
     line-height: 19px;
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 .contact-form-paragraph-1 {
     text-align: center;
     color: #686b6f;
     font-size: 20px;
-}
-
-.contact-form-title {
-    margin: 80px 0 40px 0;
-}
-
-.section-c-h {
-    text-align: center;
-    color: #686b6f;
-    margin: 80px 0;
-    font-size: 40px;
-    font-weight: 300
+    margin: 0;
 }
 
 .section-c-h-2 {
     color: #686b6f;
+    margin-bottom: 7px;
 }
 
 .section-c-span1 {
@@ -564,11 +604,13 @@ h4 {
 
 .form-input {
     width: 47%;
+    height: 50px;
     padding: 7px;
+    font-size: 18px;
     border: 1px solid rgb(225, 229, 229);
     border-radius: 3px;
     margin-right: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .form-input:hover {
@@ -605,7 +647,9 @@ h4 {
 
 #msg {
     width: 464px;
-    padding: 7px;
+    height: 85px;
+    padding: 28px 0 0 0;
+    font-size: 18px;
     border: 1px solid rgb(225, 229, 229);
     border-radius: 3px;
     margin-right: 20px;
@@ -614,7 +658,7 @@ h4 {
 .home-page-form {
     width: 464px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 75px;
     margin-bottom: 30px;
 }
 
